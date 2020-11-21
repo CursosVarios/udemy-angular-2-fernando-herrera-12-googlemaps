@@ -3,10 +3,10 @@ import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { importType } from "@angular/compiler/src/output/output_ast";
 
 import { MaterialModule } from "./material.module";
 import { AppRoutingModule } from "./app-routing.module";
+import { AppMapsModule } from "./app-maps.module";
 import { ComponentsModule } from "./components/components.module";
 
 @NgModule({
@@ -17,6 +17,7 @@ import { ComponentsModule } from "./components/components.module";
     ComponentsModule,
     BrowserAnimationsModule,
     MaterialModule,
+    AppMapsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
