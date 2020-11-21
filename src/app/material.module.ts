@@ -5,8 +5,13 @@ import { CommonModule } from "@angular/common";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
-
-const mateiaModule = [MatToolbarModule, MatButtonModule, MatProgressBarModule];
+import { MatCardModule } from "@angular/material/card";
+const mateiaModule = [
+  MatToolbarModule,
+  MatButtonModule,
+  MatProgressBarModule,
+  MatCardModule,
+];
 
 @NgModule({
   declarations: [],
