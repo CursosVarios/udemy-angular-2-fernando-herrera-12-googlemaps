@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Hi </h1>
+<div mat-dialog-content>
+    <p>What's your favorite animal?</p>
+    <form [formGroup]="forma">
+        <mat-form-field>
+            <mat-label>titulo</mat-label>
+            <input matInput placeHolder="Titulo" formControlName="titulo">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>descripcion</mat-label>
+            <textarea rows="3" matInput placeHolder="desceipcion" formControlName="desc"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Lat</mat-label>
+            <input matInput placeHolder="latitud" formControlName="lat">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>longitud</mat-label>
+            <input matInput placeHolder="longitud" formControlName="lon">
+        </mat-form-field>
+        <!--
+        <mat-form-field>
+          input matInput [(ngModel)]="data.titulo">
+          <input matInput [(ngModel)]="data.desc">
+          <input matInput [(ngModel)]="data.lat">
+          <input matInput [(ngModel)]="data.lon">
+        </mat-form-field>
+      -->
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="change()" cdkFocusInitial>Ok</button>
+    <!-- [mat-dialog-close]="data"  -->
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+</div>
